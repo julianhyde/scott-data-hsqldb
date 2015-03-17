@@ -48,6 +48,7 @@ ResultSet resultSet = statement.executeQuery("select * from EMP");
 * Blog: http://julianhyde.blogspot.com
 * Project page: http://www.hydromatic.net/scott-data-hsqldb
 * Source code: http://github.com/julianhyde/scott-data-hsqldb
+* Distribution: <a href="http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22scott-data-hsqldb%22">Maven Central</a>
 * Developers list:
   <a href="mailto:dev@calcite.incubator.apache.org">dev at calcite.incubator.apache.org</a>
   (<a href="http://mail-archives.apache.org/mod_mbox/incubator-calcite-dev/">archive</a>,

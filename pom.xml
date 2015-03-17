@@ -25,7 +25,7 @@ limitations under the License.
   </parent>
 
   <artifactId>scott-data-hsqldb</artifactId>
-  <version>0.1</version>
+  <version>0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>scott-data-hsqldb</name>
@@ -92,7 +92,7 @@ limitations under the License.
     <connection>scm:git:git://github.com/julianhyde/scott-data-hsqldb.git</connection>
     <developerConnection>scm:git:git@github.com:julianhyde/scott-data-hsqldb.git</developerConnection>
     <url>scm:git:git://github.com/julianhyde/scott-data-hsqldb.git</url>
-    <tag>scott-data-hsqldb-0.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <prerequisites>

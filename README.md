@@ -41,6 +41,32 @@ Statement statement = connection.createStatement();
 ResultSet resultSet = statement.executeQuery("select * from EMP");
 ```
 
+## Using SQLLine
+
+Connect from the command line using the [SQLLine](https://github.com/julianhyde/sqlline) shell:
+
+```
+$ ./sqlline
+sqlline version 1.2.0
+sqlline> !connect jdbc:hsqldb:res:scott SCOTT TIGER
+2017-01-20 18:28:31,464 [main] INFO  - open start - state modified
+2017-01-20 18:28:31,485 [main] INFO  - Checkpoint start
+2017-01-20 18:28:31,485 [main] INFO  - Checkpoint end - txts: 25
+0: jdbc:hsqldb:res:scott> select * from dept;
++--------+----------------+---------------+
+| DEPTNO |     DNAME      |      LOC      |
++--------+----------------+---------------+
+| 10     | ACCOUNTING     | NEW YORK      |
+| 20     | RESEARCH       | DALLAS        |
+| 30     | SALES          | CHICAGO       |
+| 40     | OPERATIONS     | BOSTON        |
++--------+----------------+---------------+
+4 rows selected (0.002 seconds)
+```
+
+You may need to edit the `sqlline` or `sqlline.bat` launcher script,
+adding `scott-data-hsqldb.jar` to your class path.
+
 ## Get scott-data-hsqldb
 
 ### From Maven

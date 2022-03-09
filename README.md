@@ -42,7 +42,7 @@ Add the following to your Maven pom.xml:
   <dependency>
     <groupId>net.hydromatic</groupId>
     <artifactId>scott-data-hsqldb</artifactId>
-    <version>0.1</version>
+    <version>0.2</version>
   </dependency>
 </dependencies>
 ```
@@ -102,7 +102,7 @@ Get scott-data-hsqldb from
 <dependency>
   <groupId>net.hydromatic</groupId>
   <artifactId>scott-data-hsqldb</artifactId>
-  <version>0.1</version>
+  <version>0.2</version>
 </dependency>
 ```
 

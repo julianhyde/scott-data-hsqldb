@@ -72,6 +72,10 @@ limitations under the License.
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <top.dir>${project.basedir}</top.dir>
+
+    <!-- Versions in alphabetical order. -->
+    <hsqldb.version>2.6.1</hsqldb.version>
+    <junit.version>4.13.2</junit.version>
   </properties>
 
   <!-- Environment settings. -->
@@ -103,13 +107,13 @@ limitations under the License.
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.13.2</version>
+      <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.hsqldb</groupId>
       <artifactId>hsqldb</artifactId>
-      <version>2.3.1</version>
+      <version>${hsqldb.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

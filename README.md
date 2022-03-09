@@ -37,7 +37,7 @@ Add the following to your Maven pom.xml:
   <dependency>
     <groupId>org.hsqldb</groupId>
     <artifactId>hsqldb</artifactId>
-    <version>2.3.1</version>
+    <version>2.6.1</version>
   </dependency>
   <dependency>
     <groupId>net.hydromatic</groupId>
@@ -46,6 +46,11 @@ Add the following to your Maven pom.xml:
   </dependency>
 </dependencies>
 ```
+
+(scott-data-hsqldb supports HSQLDB 2.0.0 and higher,
+and Java 8 and higher;
+note that HSQLDB 2.6.0 and higher requires
+<a href="http://hsqldb.org/doc/2.0/changelist_2_0.txt">Java 11 and higher</a>.)
 
 Connect to the database via the URL, user name and password in the
 `ScottHsqldb` class:
@@ -69,7 +74,7 @@ Connect from the command line using the [SQLLine](https://github.com/julianhyde/
 
 ```
 $ ./sqlline
-sqlline version 1.2.0
+sqlline version 1.12.0
 sqlline> !connect jdbc:hsqldb:res:scott SCOTT TIGER
 0: jdbc:hsqldb:res:scott> select * from dept;
 +--------+----------------+---------------+
@@ -103,7 +108,7 @@ Get scott-data-hsqldb from
 
 ### Download and build
 
-Java version 8 or higher.
+Use Java version 11 or higher.
 
 ```bash
 $ git clone git://github.com/julianhyde/scott-data-hsqldb.git

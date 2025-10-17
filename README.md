@@ -20,6 +20,7 @@ License.
 -->
 [![Build Status](https://github.com/julianhyde/scott-data-hsqldb/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/julianhyde/scott-data-hsqldb/actions?query=branch%3Amain)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.hydromatic/scott-data-hsqldb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.hydromatic/scott-data-hsqldb)
+[![javadoc](https://javadoc.io/badge2/net.hydromatic/scott-data-hsqldb/javadoc.svg)](https://javadoc.io/doc/net.hydromatic/scott-data-hsqldb)
 
 # scott-data-hsqldb
 Scott data set in hsqldb format
@@ -112,7 +113,7 @@ Get scott-data-hsqldb from
 Use Java version 11 or higher.
 
 ```bash
-$ git clone git://github.com/julianhyde/scott-data-hsqldb.git
+$ git clone https://github.com/julianhyde/scott-data-hsqldb.git
 $ cd scott-data-hsqldb
 $ ./mvnw install
 ```

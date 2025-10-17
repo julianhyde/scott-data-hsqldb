@@ -64,7 +64,7 @@ limitations under the License.
       <subscribe>dev-subscribe@calcite.apache.org</subscribe>
       <unsubscribe>dev-unsubscribe@calcite.apache.org</unsubscribe>
       <post>dev@calcite.apache.org</post>
-      <archive>http://mail-archives.apache.org/mod_mbox/calcite-dev</archive>
+      <archive>https://mail-archives.apache.org/mod_mbox/calcite-dev</archive>
     </mailingList>
   </mailingLists>
 
@@ -73,6 +73,7 @@ limitations under the License.
     <top.dir>${project.basedir}</top.dir>
 
     <!-- Versions in alphabetical order. -->
+    <central-publishing-maven-plugin.version>0.8.0</central-publishing-maven-plugin.version>
     <googleformatter-maven-plugin.version>1.7.5</googleformatter-maven-plugin.version>
     <hsqldb.version>2.7.4</hsqldb.version>
     <junit.version>4.13.2</junit.version>
@@ -187,6 +188,16 @@ limitations under the License.
             </configuration>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.sonatype.central</groupId>
+        <artifactId>central-publishing-maven-plugin</artifactId>
+        <version>${central-publishing-maven-plugin.version}</version>
+        <extensions>true</extensions>
+        <configuration>
+          <publishingServerId>central</publishingServerId>
+          <autoPublish>true</autoPublish>
+        </configuration>
       </plugin>
       <plugin>
         <groupId>pl.project13.maven</groupId>

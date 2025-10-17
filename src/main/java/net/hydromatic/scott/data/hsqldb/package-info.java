@@ -15,7 +15,8 @@
  * limitations under the License.
  */
 
-/** Contains the "Scott" data set in hsqldb format.
+/**
+ * Contains the "Scott" data set in hsqldb format.
  *
  * <p>Tables: EMP, DEPT, SALGRADE, BONUS
  */

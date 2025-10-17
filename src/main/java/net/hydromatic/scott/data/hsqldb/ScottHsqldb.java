@@ -20,6 +20,7 @@ package net.hydromatic.scott.data.hsqldb;
 public class ScottHsqldb {
   /** URI of the hsqldb database. */
   public static final String URI = "jdbc:hsqldb:res:scott";
+
   public static final String USER = "SCOTT";
   public static final String PASSWORD = "TIGER";
 }

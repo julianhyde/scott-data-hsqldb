@@ -74,6 +74,7 @@ limitations under the License.
     <top.dir>${project.basedir}</top.dir>
 
     <!-- Versions in alphabetical order. -->
+    <googleformatter-maven-plugin.version>1.7.5</googleformatter-maven-plugin.version>
     <hsqldb.version>2.6.1</hsqldb.version>
     <junit.version>4.13.2</junit.version>
   </properties>
@@ -123,6 +124,28 @@ limitations under the License.
     <pluginManagement />
 
     <plugins>
+      <plugin>
+        <groupId>com.theoryinpractise</groupId>
+        <artifactId>googleformatter-maven-plugin</artifactId>
+        <version>${googleformatter-maven-plugin.version}</version>
+        <executions>
+          <execution>
+            <id>reformat-sources</id>
+            <configuration>
+              <includeStale>false</includeStale>
+              <style>GOOGLE</style>
+              <filterModified>false</filterModified>
+              <skip>false</skip>
+              <fixImports>true</fixImports>
+              <maxLineLength>80</maxLineLength>
+            </configuration>
+            <goals>
+              <goal>format</goal>
+            </goals>
+            <phase>process-sources</phase>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>

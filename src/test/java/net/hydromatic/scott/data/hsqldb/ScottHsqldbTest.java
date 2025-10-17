@@ -16,17 +16,16 @@
  */
 package net.hydromatic.scott.data.hsqldb;
 
+import java.sql.*;
 import org.junit.Test;
 
-import java.sql.*;
-
-/**
- * Kick the tires
- */
+/** Kick the tires */
 public class ScottHsqldbTest {
-  @Test public void test() throws SQLException {
-    final Connection connection = DriverManager.getConnection(ScottHsqldb.URI,
-        ScottHsqldb.USER, ScottHsqldb.PASSWORD);
+  @Test
+  public void test() throws SQLException {
+    final Connection connection =
+        DriverManager.getConnection(
+            ScottHsqldb.URI, ScottHsqldb.USER, ScottHsqldb.PASSWORD);
     final Statement statement = connection.createStatement();
     foo(statement.executeQuery("select * from EMP"));
     foo(statement.executeQuery("select * from DEPT"));

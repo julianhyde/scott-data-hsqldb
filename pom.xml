@@ -30,7 +30,7 @@ limitations under the License.
 
   <name>scott-data-hsqldb</name>
   <description>Scott data set in hsqldb format</description>
-  <url>http://github.com/julianhyde/scott-data-hsqldb</url>
+  <url>https://github.com/julianhyde/scott-data-hsqldb</url>
   <inceptionYear>2015</inceptionYear>
   <organization>
     <name>Julian Hyde</name>
@@ -51,8 +51,7 @@ limitations under the License.
       <email>jhyde@apache.org</email>
       <url>https://github.com/julianhyde</url>
       <roles>
-        <role>architect</role>
-        <role>developer</role>
+        <role>maintainer</role>
       </roles>
       <timezone>-8</timezone>
       <properties />
@@ -75,7 +74,7 @@ limitations under the License.
 
     <!-- Versions in alphabetical order. -->
     <googleformatter-maven-plugin.version>1.7.5</googleformatter-maven-plugin.version>
-    <hsqldb.version>2.6.1</hsqldb.version>
+    <hsqldb.version>2.7.4</hsqldb.version>
     <junit.version>4.13.2</junit.version>
   </properties>
 

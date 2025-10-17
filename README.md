@@ -37,11 +37,6 @@ Add the following to your Maven pom.xml:
 ```xml
 <dependencies>
   <dependency>
-    <groupId>org.hsqldb</groupId>
-    <artifactId>hsqldb</artifactId>
-    <version>2.6.1</version>
-  </dependency>
-  <dependency>
     <groupId>net.hydromatic</groupId>
     <artifactId>scott-data-hsqldb</artifactId>
     <version>0.2</version>
@@ -49,12 +44,12 @@ Add the following to your Maven pom.xml:
 </dependencies>
 ```
 
-(scott-data-hsqldb supports HSQLDB 2.0.0 and higher,
+(scott-data-hsqldb supports HSQLDB 2.3.0 and higher,
 and Java 8 and higher;
 note that HSQLDB 2.6.0 and higher requires
 <a href="http://hsqldb.org/doc/2.0/changelist_2_0.txt">Java 11 and higher</a>.)
 
-Connect to the database via the URL, user name and password in the
+Connect to the database via the URL, username and password in the
 `ScottHsqldb` class:
 
 ```java
@@ -65,9 +60,11 @@ import java.sql.Statement;
 import net.hydromatic.scott.data.hsqldb;
 
 Connection connection =
-  DriverManager.getConnection(ScottHsqldb.URI, ScottHsqldb.USER, ScottHsqldb.PASSWORD);
+    DriverManager.getConnection(ScottHsqldb.URI,
+        ScottHsqldb.USER, ScottHsqldb.PASSWORD);
 Statement statement = connection.createStatement();
-ResultSet resultSet = statement.executeQuery("select * from EMP");
+ResultSet resultSet =
+    statement.executeQuery("select * from EMP");
 ```
 
 ## Using SQLLine
@@ -123,6 +120,10 @@ On Windows, the last line is
 ```bash
 > mvnw install
 ```
+
+If you are using Java 8, you should add a parameter
+`-Dhsqldb.version=2.5.1`, because HSQLDB 2.6.0 or higher
+requires JDK 11 or higher.
 
 ## See also
 

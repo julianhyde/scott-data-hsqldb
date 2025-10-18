@@ -33,22 +33,6 @@ account that has been installed with Oracle since time immemorial.
 
 ## To connect and read data
 
-Add the following to your Maven pom.xml:
-```xml
-<dependencies>
-  <dependency>
-    <groupId>net.hydromatic</groupId>
-    <artifactId>scott-data-hsqldb</artifactId>
-    <version>0.2</version>
-  </dependency>
-</dependencies>
-```
-
-(scott-data-hsqldb supports HSQLDB 2.3.0 and higher,
-and Java 8 and higher;
-note that HSQLDB 2.6.0 and higher requires
-<a href="http://hsqldb.org/doc/2.0/changelist_2_0.txt">Java 11 and higher</a>.)
-
 Connect to the database via the URL, username and password in the
 `ScottHsqldb` class:
 
@@ -101,7 +85,7 @@ Get scott-data-hsqldb from
 <dependency>
   <groupId>net.hydromatic</groupId>
   <artifactId>scott-data-hsqldb</artifactId>
-  <version>0.2</version>
+  <version>0.3</version>
 </dependency>
 ```
 
@@ -123,7 +107,7 @@ On Windows, the last line is
 
 If you are using Java 8, you should add a parameter
 `-Dhsqldb.version=2.5.1`, because HSQLDB 2.6.0 or higher
-requires JDK 11 or higher.
+requires at least JDK 11.
 
 ## See also
 
@@ -133,19 +117,22 @@ Similar data sets:
 * [foodmart-data-hsqldb](https://github.com/julianhyde/foodmart-data-hsqldb)
 * [foodmart-data-json](https://github.com/julianhyde/foodmart-data-json)
 * [foodmart-queries](https://github.com/julianhyde/foodmart-queries)
+* [look-data-hsqldb](https://github.com/hydromatic/look-data-hsqldb)
+* [sakila-data-hsqldb](https://github.com/hydromatic/sakila-data-hsqldb)
 * [steelwheels-data-hsqldb](https://github.com/julianhyde/steelwheels-data-hsqldb)
 
 ## More information
 
-* License: Apache License, Version 2.0
-* Author: Julian Hyde
-* Blog: http://blog.hydromatic.net
-* Project page: https://www.hydromatic.net/scott-data-hsqldb
-* Source code: https://github.com/julianhyde/scott-data-hsqldb
-* Distribution: <a href="https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22scott-data-hsqldb%22">Maven Central</a>
-* Developers list:
-  <a href="mailto:dev@calcite.apache.org">dev at calcite.apache.org</a>
-  (<a href="https://mail-archives.apache.org/mod_mbox/calcite-dev/">archive</a>,
-  <a href="mailto:dev-subscribe@calcite.apache.org">subscribe</a>)
-* Issues: https://github.com/julianhyde/scott-data-hsqldb/issues
-* <a href="HISTORY.md">Release notes and history</a>
+* **License:** Apache License, Version 2.0
+* **Author:** [Julian Hyde](https://github.com/julianhyde)
+  ([@julianhyde](https://twitter.com/julianhyde))
+* **Blog:** http://blog.hydromatic.net
+* **Source code:** https://github.com/julianhyde/scott-data-hsqldb
+* **Distribution:**
+  [Maven Central</a>](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22scott-data-hsqldb%22)
+* **Developers list:**
+  [dev@calcite.apache.org](mailto:dev@calcite.apache.org)
+  ([archive](https://mail-archives.apache.org/mod_mbox/calcite-dev/),
+  [subscribe](mailto:dev-subscribe@calcite.apache.org))
+* **Issues:** https://github.com/julianhyde/scott-data-hsqldb/issues
+* **Release notes:** [HISTORY.md](HISTORY.md)

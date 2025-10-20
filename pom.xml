@@ -79,7 +79,7 @@ limitations under the License.
     <googleformatter-maven-plugin.version>1.7.5</googleformatter-maven-plugin.version>
     <hsqldb.version>2.7.4</hsqldb.version>
     <junit.version>4.13.2</junit.version>
-    <maven-compiler-plugin.version>3.14.0</maven-compiler-plugin.version>
+    <maven-compiler-plugin.version>3.14.1</maven-compiler-plugin.version>
     <maven-enforcer-plugin.version>3.0.0</maven-enforcer-plugin.version>
     <maven-release-plugin.version>2.4.2</maven-release-plugin.version>
     <maven-scm-provider-gitexe.version>1.9.1</maven-scm-provider-gitexe.version>

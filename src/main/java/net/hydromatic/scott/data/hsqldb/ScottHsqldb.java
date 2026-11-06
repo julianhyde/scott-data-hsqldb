@@ -19,7 +19,7 @@ package net.hydromatic.scott.data.hsqldb;
 import java.util.Arrays;
 import java.util.List;
 
-/** Scott data set in hsqldb format. */
+/** Scott data set in HSQLDB format. */
 public class ScottHsqldb {
   /** URI of the hsqldb database. */
   public static final String URI = "jdbc:hsqldb:res:scott";

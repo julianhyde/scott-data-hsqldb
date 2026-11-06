@@ -16,7 +16,7 @@
  */
 
 /**
- * Contains the "Scott" data set in hsqldb format.
+ * Contains the "Scott" data set in HSQLDB format.
  *
  * <p>Tables: EMP, DEPT, SALGRADE, BONUS
  */

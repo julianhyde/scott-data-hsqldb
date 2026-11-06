@@ -19,16 +19,16 @@ License.
 {% endcomment %}
 -->
 [![Build Status](https://github.com/julianhyde/scott-data-hsqldb/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/julianhyde/scott-data-hsqldb/actions?query=branch%3Amain)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.hydromatic/scott-data-hsqldb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.hydromatic/scott-data-hsqldb)
+[![Maven Central](https://img.shields.io/maven-central/v/net.hydromatic/scott-data-hsqldb.svg)](https://central.sonatype.com/artifact/net.hydromatic/scott-data-hsqldb)
 [![javadoc](https://javadoc.io/badge2/net.hydromatic/scott-data-hsqldb/javadoc.svg)](https://javadoc.io/doc/net.hydromatic/scott-data-hsqldb)
 
 # scott-data-hsqldb
-Scott data set in hsqldb format
+Scott data set in HSQLDB format
 
 This project contains the Scott data set as an
 HSQLDB database.
 
-It originated as the "<a href="https://community.oracle.com/message/10655227">Scott/Tiger</a>"
+It originated as the "[Scott/Tiger](https://web.archive.org/web/20200813154925/https://community.oracle.com/message/10655227)"
 account that has been installed with Oracle since time immemorial.
 
 ## To connect and read data
@@ -38,10 +38,11 @@ Connect to the database via the URL, username and password in the
 
 ```java
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-import net.hydromatic.scott.data.hsqldb;
+import net.hydromatic.scott.data.hsqldb.ScottHsqldb;
 
 Connection connection =
     DriverManager.getConnection(ScottHsqldb.URI,
@@ -79,7 +80,7 @@ adding `scott-data-hsqldb.jar` to your class path.
 ### From Maven
 
 Get scott-data-hsqldb from
-<a href="https://search.maven.org/#search%7Cga%7C1%7Cg%3Anet.hydromatic%20a%3Ascott-data-hsqldb">Maven Central</a>:
+[Maven Central](https://central.sonatype.com/artifact/net.hydromatic/scott-data-hsqldb):
 
 ```xml
 <dependency>
@@ -111,11 +112,28 @@ requires at least JDK 11.
 
 ## See also
 
+The same data set is available in other forms.
+
+There are scripts that create the tables (EMP, DEPT, BONUS,
+SALGRADE, DUMMY) in
+[BigQuery](https://gist.github.com/julianhyde/6ea75e1b4e9c76ccdb48430717644eed),
+[DuckDB](https://gist.github.com/julianhyde/32364a3d55151efe7b746bdd466ccda1),
+[Oracle](https://gist.github.com/julianhyde/686145afd0af9fdf61f7b57c5a7299b7),
+[PostgreSQL](https://gist.github.com/julianhyde/13b55f716060649da96d8dcad1316546) and
+[SQL Server](https://gist.github.com/julianhyde/40c535b91c40a0c36e0ea8d764541c57),
+and queries that define the tables as common table expressions
+(CTEs), so you can use the data without creating any tables, in
+[BigQuery](https://gist.github.com/julianhyde/6b45a541ea711a718ec1090a6d8fe592),
+[Oracle](https://gist.github.com/julianhyde/bf44e5403a8086de58e201456db99c32) and
+[PostgreSQL](https://gist.github.com/julianhyde/70609f4de92ccabec41b9a9df0689d23).
+
 Similar data sets:
 * [chinook-data-hsqldb](https://github.com/julianhyde/chinook-data-hsqldb)
 * [flight-data-hsqldb](https://github.com/julianhyde/flight-data-hsqldb)
-* [foodmart-data-hsqldb](https://github.com/julianhyde/foodmart-data-hsqldb)
+* [foodmart-data](https://github.com/hydromatic/foodmart-data)
+* [foodmart-data-hsqldb](https://github.com/hydromatic/foodmart-data-hsqldb)
 * [foodmart-data-json](https://github.com/julianhyde/foodmart-data-json)
+* [foodmart-data-mysql](https://github.com/julianhyde/foodmart-data-mysql)
 * [foodmart-queries](https://github.com/julianhyde/foodmart-queries)
 * [look-data-hsqldb](https://github.com/hydromatic/look-data-hsqldb)
 * [sakila-data-hsqldb](https://github.com/hydromatic/sakila-data-hsqldb)
@@ -125,14 +143,14 @@ Similar data sets:
 
 * **License:** Apache License, Version 2.0
 * **Author:** [Julian Hyde](https://github.com/julianhyde)
-  ([@julianhyde](https://twitter.com/julianhyde))
+  ([@julianhyde](https://x.com/julianhyde))
 * **Blog:** http://blog.hydromatic.net
 * **Source code:** https://github.com/julianhyde/scott-data-hsqldb
 * **Distribution:**
-  [Maven Central</a>](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22scott-data-hsqldb%22)
+  [Maven Central](https://central.sonatype.com/artifact/net.hydromatic/scott-data-hsqldb)
 * **Developers list:**
   [dev@calcite.apache.org](mailto:dev@calcite.apache.org)
-  ([archive](https://mail-archives.apache.org/mod_mbox/calcite-dev/),
+  ([archive](https://lists.apache.org/list.html?dev@calcite.apache.org),
   [subscribe](mailto:dev-subscribe@calcite.apache.org))
 * **Issues:** https://github.com/julianhyde/scott-data-hsqldb/issues
 * **Release notes:** [HISTORY.md](HISTORY.md)

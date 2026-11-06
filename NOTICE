@@ -1,7 +1,7 @@
 scott-data-hsqldb
-Scott data set in hsqldb format
+Scott data set in HSQLDB format
 
-Copyright (C) 2015-2025 Julian Hyde
+Copyright (C) 2015-2026 Julian Hyde
 All Rights Reserved.
 
 Based upon Oracle's "scott/tiger" data set.

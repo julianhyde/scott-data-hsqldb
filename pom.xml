@@ -29,7 +29,7 @@ limitations under the License.
   <packaging>jar</packaging>
 
   <name>scott-data-hsqldb</name>
-  <description>Scott data set in hsqldb format</description>
+  <description>Scott data set in HSQLDB format</description>
   <url>https://github.com/julianhyde/scott-data-hsqldb</url>
   <inceptionYear>2015</inceptionYear>
   <organization>
